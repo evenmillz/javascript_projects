@@ -9,3 +9,6 @@ var S = "This text was created by assigning a string value to a variable, and th
 window.alert(S)
 
 document.write("<br><br>What did the string say when another string asked,<br> \"Hey string! Do you happen to know the time?\"<br>\"No, I'm a frayed knot.")
+
+document.write("<br><br>\"If there is no struggle, there is no progress.\"<br>" +
+    "- Frederick Douglass")
