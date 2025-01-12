@@ -1,1 +1,1 @@
-alert("Alert!")
+window.alert("Window.Alert Method!")
