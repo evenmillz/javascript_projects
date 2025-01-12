@@ -5,5 +5,5 @@ document.write("document.write wrote this sentence, and the following text is a 
 var P = "'P' is for 'Programming'!"
 document.write(P)
 
-var S = "This string was created by assigning a string value to a variable, and then using the windo.alert() method to display it!"
+var S = "This text was created by assigning a string value to a variable, and then using the window.alert() method to display it!"
 window.alert(S)
