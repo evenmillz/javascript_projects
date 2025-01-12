@@ -12,3 +12,8 @@ document.write("<br><br>What did the string say when another string asked,<br> \
 
 document.write("<br><br>\"If there is no struggle, there is no progress.\"<br>" +
     "- Frederick Douglass")
+
+let AI = "Artificial Intelligence", OI = "Organic Intelligence", ChatGPT = "Programmed Response", Even = "Original Response"
+document.write("<br><br>" + Even)
+
+2 + 9 
