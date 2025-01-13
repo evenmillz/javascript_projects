@@ -26,4 +26,5 @@ document.write(C)
 var AI = "Artificial Intelligence", OI = "Organic Intelligence", ChatGPT = "Programmed Response", Even = "Original Response"
 document.write("<br><br>" + Even)
 
+// Wrote an expression
 2 + 9 
