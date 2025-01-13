@@ -28,3 +28,8 @@ document.write("<br><br>" + Even)
 
 // Wrote an expression
 2 + 9 
+
+// Created two variables, concatenating them together
+var Sent1 = "<br><br>This is the beginning of the string " 
+var Sent2 = "<br><br>and this is the end of the string"
+document.write(Sent1 + Sent2)
