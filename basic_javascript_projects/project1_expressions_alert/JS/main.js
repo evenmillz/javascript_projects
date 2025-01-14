@@ -38,3 +38,4 @@ document.write(Sent1 + Sent2)
 function displayLocation() {
     alert("Your location is here!")
 }
+
