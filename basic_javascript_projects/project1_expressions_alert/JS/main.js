@@ -31,5 +31,10 @@ document.write("<br><br>" + Even)
 
 // Created two variables, concatenating them together
 var Sent1 = "<br><br>This is the beginning of the string " 
-var Sent2 = "<br><br>and this is the end of the string"
+var Sent2 = "<br><br>and this is the end of the string<br><br>"
 document.write(Sent1 + Sent2)
+
+// Utilized new HTML event
+function displayLocation() {
+    alert("Your location is here!")
+}
