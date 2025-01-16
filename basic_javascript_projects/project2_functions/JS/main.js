@@ -16,3 +16,4 @@ function bigConc() {
 // string
     document.getElementById("BigCwords").innerHTML = words;
 }
+
