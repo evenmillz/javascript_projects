@@ -8,9 +8,12 @@ function first_Dictionary() {
         Course: "JavaScript",
         HowStudy: "Online"
     };
+
 // Wrote a delete statement that removes the key 'Name' before its 
 // value is displayed    
     delete Student.Name;
+
+// Utilized the document.getElementByID method to display a dictionary value   
     document.getElementById("Dictionary").innerHTML = Student.Name;
 }
 
