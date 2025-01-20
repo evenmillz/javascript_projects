@@ -1,46 +1,46 @@
-// Added <br>'s throughout the code to provide a cleaner look, following the order of operations
+// Added <br>'s throughout the code to provIde a cleaner look, following the order of operations
 
-// Used the “type of” operator to return '100%'
-// Utilized the 'document.getElementByID' method to display the result
-document.write(10 + "0" + "% (Utilized the 'type of” operator to return '100%')<br><br>")
+// Used the 'type of' operator to return '100%'
+// Utilized the 'document.getElementById' method to display the result
+document.write(10 + "0" + "% (Utilized the 'type of' operator to return '100%')<br><br>")
 
 // Created a function to return 'NaN'
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function nan_Bread() {
     document.getElementById("yum").innerHTML = 0/0 +
 " (Created a function to return 'NaN')";
 }
 
 // Created a function to return a 'false' result by using 'isNaN',
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function no_Nan() {
     document.getElementById("sadFace").innerHTML = isNaN(2) +
 " (Created a function to return a 'false' result by using 'isNaN')";
 }
 
 // Created a function to return the result 'Infinity'
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function to_Infinity() {
     document.getElementById("infinite").innerHTML = 2E2222 +
-" ( Created a function to return the result 'Infinity')";
+" (Created a function to return the result 'Infinity')";
 }
 
 // Created a function to return the result '-Infinity' 
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function neg_Infinity() {
     document.getElementById("negInfinite").innerHTML = -2E2222 +
 " (Created a function to return the result '-Infinity')";
 }
 
 // Created a function to use Boolean logic to return true
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function is_True() {
     document.getElementById("bigFacts").innerHTML = (2 > 1) +
 " (Created a function to use Boolean logic to return 'true')";
 }
 
 // Created a function to use Boolean logic to return false
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function is_False() {
     document.getElementById("falseHood").innerHTML = (2 < 1) +
 " (Created a function to use Boolean logic to return 'false')";
@@ -63,8 +63,9 @@ function fake_News() {
 fake_News();
 
 // Utilized the '==' to return 'true'
+// Utilized 'document.write()' to display the result in the browser
 document.write((22 == 22) + 
-" (Utilized the '==' to campare data type and value to return 'true')<br><br>");
+" (Utilized the '==' to compare data type and value to return 'true')<br><br>");
 
 // Utilized the '==' to return 'false'
 // Utilized 'document.write()' to display the result in the browser
@@ -72,9 +73,9 @@ document.write((22 == 2) +
 " (Utilized the '==' to match data type and value to return 'false')<br><br>");
 
 // Assigned three variables using an '=' sign
-A = 2;
-B = 2;
-C = 22;
+let A = 2;
+let B = 2;
+let C = 22;
 
 // Utilized the '===' to match the data type and value to return 'true'
 // Utilized 'document.write()' to display the display in the browser
@@ -104,27 +105,27 @@ document.write((1 == 1 && 2 == 2) +
 // Utilized the 'AND' operator to return 'false'
 // Utilized 'document.write()' to display the result in the browser
 document.write((1 == 1 && 1 == 2) +
-" (Utilized the 'AND' operator to return 'false')<br><br>")
+" (Utilized the 'AND' operator to return 'false')<br><br>");
 
 // Utilized the 'OR' operator to return 'true'
 // Utilized 'document.write()' to display the result in the browser
 document.write((1 == 1 || 1 == 2) +
-" (Utilized the 'OR' operator to return 'true')<br><br>")
+" (Utilized the 'OR' operator to return 'true')<br><br>");
 
 // Utilized the 'OR' operator to return 'false'
 // Utilized 'document.write()' to display the result in the browser
 document.write((1 == 2 || 2 == 1) +
-" (Utilized the 'OR' operator to return 'false')<br><br>")
+" (Utilized the 'OR' operator to return 'false')<br><br>");
 
 // Utilized the '!' (not) operator to return 'true'
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function nope_Not() {
     document.getElementById("nada").innerHTML = !(2 > 2) + 
 " (Utilized the '!' (not) operator to return 'true')";         
 }
 
 // Utilized the '!' (not) operator to return 'false'
-// Utilized the 'document.getElementByID' method to display the result
+// Utilized the 'document.getElementById' method to display the result
 function yup_Yes() {
     document.getElementById("si").innerHTML = !(2 == 2) + 
 " (Utilized the '!' (not) operator to return 'false')";         
