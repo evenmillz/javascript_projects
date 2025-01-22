@@ -60,7 +60,7 @@ function someStudents() {
 
 // NESTED FUNCTION
 
-// Created a function named 'nestedFunction' and utilized 'document.getElementById' to display
+// Created a function named 'birdNest' and utilized 'document.getElementById' to display
 // the result, then created a variable named 'status' and set it to 'Brewing'
 function birdNest() {
     let status = "Steeping";
