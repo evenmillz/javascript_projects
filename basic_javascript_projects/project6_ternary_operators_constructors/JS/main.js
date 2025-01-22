@@ -31,7 +31,7 @@ let Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 
 function myFunction() {
     document.getElementById("Keywords_and_Constructors").innerHTML =
-    "Erik drives a " + Erik.Vehicle_Color + "-colored" + Erik.Vehicle_Model +
+    "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
     " manufactured in " + Erik.Vehicle_Year;
 }
 
@@ -57,3 +57,22 @@ function someStudents() {
     "Even is a " + Even.Student_Age + " year old " + Even.Student_Sex + " enrolled in " + 
     " with The Tech Academy, currently hard at work with  " + Even.Student_Course + "!";
 }
+
+// NESTED FUNCTION
+
+// Created a function named 'nestedFunction' and utilized 'document.getElementById' to display
+// the result, then created a variable named 'status' and set it to 'Brewing'
+function birdNest() {
+    let status = "Steeping";
+
+    // Created a nested function named 'addFlair' that adds something extra to the ‘Status’ variable 
+    // from the main function
+    function addFlair() {
+        status += " your coffee now. You can add your own cream or sugar if you want any."
+    }
+
+    addFlair();
+
+    document.getElementById("Nested_Function").innerHTML = status;
+}
+
