@@ -1,3 +1,17 @@
+// IF STATEMENT ASSIGNMENT (Moved to the top of the file for functionality)
+
+// Created a variable and used an if statement and console.log() to call the variable.
+
+let Dollars = 100;
+
+function build_Wealth() {
+    document.getElementById("moMoney").innerHTML = 
+    "You have $" + Dollars + ". Time to invest!";
+
+    // Hides the button after it is pressed using style.display and choosing 'none'
+    document.querySelector("button").style.display = "none";
+}
+
 // SCOPE
 
 // Created a global variable
@@ -48,5 +62,4 @@ function time_Check() {
         "Most people are sleeping by now!"
     }
 }
-
 
