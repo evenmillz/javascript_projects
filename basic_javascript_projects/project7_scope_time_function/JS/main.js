@@ -8,7 +8,7 @@ function build_Wealth() {
     document.getElementById("moMoney").innerHTML = 
     "You have $" + Dollars + ". Time to invest!";
 
-    // Hides the button after it is pressed using style.display and choosing 'none'
+// Hides the button after it is pressed using style.display and choosing 'none'
     document.querySelector("button").style.display = "none";
 }
 
@@ -63,3 +63,35 @@ function time_Check() {
     }
 }
 
+// ELSE ASSIGNMENT
+
+// Created a function that includes an 'if' and an 'else' statement
+
+function Guess_Number() {
+    let Number = document.getElementById("number").value;
+    if (Number != 2) {
+       document.getElementById("numGame").innerHTML = "Guess again!";
+    }
+    else {
+        document.getElementById("numGame").innerHTML = "You guessed the right number!";
+    }
+}
+
+// ELSE IF STATEMENTS ASSIGNMENT
+
+// Created a function to display what time of day it is
+
+function Time_Function() {
+    let Time = new Date().getHours();
+    let Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time >= 12 == Time < 18) {
+        Reply = "It is afternoon.";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}
