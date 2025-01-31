@@ -18,8 +18,39 @@ function Call_Loop() {
         A++;
     }
 
-    display += "<strong>'A' journeyed a total of 4 loops!<strong><br>";
+    display += "<strong>'A' journeyed a total of 4 loops!<strong><br><br>";
 
 // Displays the output to the browser
 document.getElementById("Loop").innerHTML = display;
+}
+
+// FOR LOOP
+
+// Initialized the variable 'sonomakers' to an array of instruments
+let sonomakers = ["Liuqin", "Tonkori", "Pyrophone", "Gobijeu", "Dizi", "Koto", "Damaru"];
+let list = "";
+
+// Created a function that iterates through the array, displaying the output
+function for_Loop() {
+
+    // Created a for loop that uses .length to itterate throught the array
+    for (let E = 0; E < sonomakers.length; E++) {
+        list += sonomakers[E] + "<br>";
+    }
+
+    // Displays the output in the browser
+    document.getElementById("List_of_Instruments").innerHTML = list + "<br><br>";
+}
+
+// ARRAY
+
+// Created the function 'evens_Names' 
+function evens_Names() {
+    
+    // Created an array of Even's names
+    let names = [];
+    names[0] = "My first name is 'Even'.";
+    names[1] = "My middle name is 'Wyne'.";
+    names[2] = "My last name is 'Richardson'.";
+    document.getElementById("array").innerHTML = names.join("<br>");
 }
