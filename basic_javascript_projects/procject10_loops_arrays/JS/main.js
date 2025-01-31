@@ -71,3 +71,5 @@ document.getElementById("always").innerHTML =
 " residing in " + Even_Remains.location +", and I enjoy " + Even_Remains.hobby + "!";
 };
 
+let W = 2;
+console.log("The Value of W is", W);
