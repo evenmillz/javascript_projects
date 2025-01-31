@@ -71,5 +71,8 @@ document.getElementById("always").innerHTML =
 " residing in " + Even_Remains.location +", and I enjoy " + Even_Remains.hobby + "!";
 };
 
+// LET KEYWORD
+
+// Utilized the 'let' keyword and used console.log to display it in the console
 let W = 2;
 console.log("The Value of W is", W);
