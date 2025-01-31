@@ -52,5 +52,22 @@ function evens_Names() {
     names[0] = "My first name is 'Even'.";
     names[1] = "My middle name is 'Wyne'.";
     names[2] = "My last name is 'Richardson'.";
+
+    // Displays the names of Even concatenated with a string
     document.getElementById("array").innerHTML = names.join("<br>");
 }
+
+// CONST KEYWORD
+
+// Created a function named 'even_const' 
+function even_const() {
+
+    // Declared the const 'Even_Remains' containing properties and values
+    const Even_Remains = {name: "Even", age: 41, location: "Australia", profession: "Developer", hobby: "Investing"}
+
+// Displays a string that includes a property value of the object
+document.getElementById("always").innerHTML =
+"Hi! I am " + Even_Remains.name + ", a " + Even_Remains.age + "-year-old " + Even_Remains.profession +
+" residing in " + Even_Remains.location +", and I enjoy " + Even_Remains.hobby + "!";
+};
+
