@@ -18,7 +18,7 @@ function Call_Loop() {
         A++;
     }
 
-    display += "<strong>'A' journeyed a total of 4 loops!<strong><br><br>";
+    display += "<strong>'A' journeyed a total of 4 loops!</strong><br><br>";
 
 // Displays the output to the browser
 document.getElementById("Loop").innerHTML = display;
@@ -76,3 +76,24 @@ document.getElementById("always").innerHTML =
 // Utilized the 'let' keyword and used console.log to display it in the console
 let W = 2;
 console.log("The Value of W is", W);
+
+// OBJECT
+
+// Created an object called 'planet' with properties and methods
+let planet = {
+    name: "Kepler-452b",
+    size: "five times Earth's mass", 
+    shape: "oblate spheroid", 
+    composition: "unknown (though likely rocky)", 
+    motion: "385 Earth day orbital period", 
+    location: "1,800 light-years away",
+    data : function () {
+        return "The planet " + planet.name + " has a " + planet.composition + " composition, with an " +
+        planet.shape + ". It is " + planet.size + " with a " + planet.motion + " and is often referred to as 'Earth's cousin'!"
+    }
+};
+
+// Created a function that displays the result in the browser
+function planet_Data() {
+    document.getElementById("celestial").innerHTML = planet.data();
+}
