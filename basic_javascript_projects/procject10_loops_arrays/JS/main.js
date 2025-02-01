@@ -1,3 +1,5 @@
+// WHILE LOOP
+
 // Creates the function 'Call_loop' to run when user clicks button
 function Call_Loop() {
 
