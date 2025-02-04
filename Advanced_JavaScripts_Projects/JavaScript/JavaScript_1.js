@@ -26,3 +26,10 @@ function dirt_Chuck() {
     // Displays the user results in the browser
     document.getElementById("dirt_Out").innerHTML = dirt_Out;
 }
+
+// DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT
+
+function mr_Ed() {
+    let H = document.getElementsByClassName("horse");
+    H[1].innerHTML = "Mr. Ed is my name, and I don't whinny, thank you very much!";
+}
