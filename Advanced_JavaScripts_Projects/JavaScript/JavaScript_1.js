@@ -29,7 +29,33 @@ function dirt_Chuck() {
 
 // DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT
 
+// Created the function 'mr_Ed' that displays a horse talking with document.GetElementByClassName()
 function mr_Ed() {
     let H = document.getElementsByClassName("horse");
-    H[1].innerHTML = "Mr. Ed is my name, and I don't whinny, thank you very much!";
+    H[1].innerHTML = "\"Mr. Ed is my name, and I don't whinny, thank you very much!\"";
 }
+
+// CANVAS ELEMENT
+
+// Created a function to make Mr. Ed draw 
+
+function horse_Paint() {
+
+    // This gets the canvas element
+    let canvas = document.getElementById("drawingHorse");
+
+    // This puts a border around the canvas element
+    canvas.style.border = "5px solid saddlebrown";
+
+    // 2D drawing context for a canvas element
+    let ctx = canvas.getContext("2d");
+    
+    // Created a new image object and set the source 
+    let img = new Image();
+    img.src = "Images/MrEd.jpg";
+
+    // This draws the image on the canvas once it loads
+    img.onload = function() {
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    };
+};
