@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="CSS/CSS_1.css" />
+  </head>
+  <body>
+    <h1>Contact for Collaboration!</h1>
+    <!-- CONTACT FORM -->
+
+    <!-- Created a form with labels and input fields containing id attributes
+     and an error message set up for the phone number field -->
+    <form id="contactForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        autocomplete="name"
+        placeholder="Enter your name"
+        required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        placeholder="Enter your email"
+        required /><br /><br />
+
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your number"
+        required />
+      <div class="errorAlert" id="teleNope"></div>
+      <br />
+
+      <label for="message">Message:</label>
+      <input
+        type="message"
+        id="message"
+        name="message"
+        placeholder="Enter your message"
+        required /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <script src="JS/JavaScript_2.js" defer></script>
+  </body>
+</html>

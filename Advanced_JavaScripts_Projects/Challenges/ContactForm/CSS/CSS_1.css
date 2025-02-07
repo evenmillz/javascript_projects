@@ -1,0 +1,55 @@
+/* CONTACT FORM */
+
+/* Heading Style */
+h1 {
+    text-align: center;
+}
+
+/* Form Style */
+form {
+    max-width: 489px;
+    margin: 18px auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Label Style */
+label {
+    display: block;
+    margin: 10px, 0 5px;
+    font-weight: bold;
+}
+
+/* Input, Textarea Style */
+input, textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 5px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Submit Button Style */
+button {
+    background-color: #ccc;
+    color: black;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 11px;
+    display: block;
+}
+
+/* Submit Button Hover Effect */
+button:hover {
+    background-color: darkgray;
+    border: 1px solid black;
+}
+
+/* Input and Textarea Hover Effect */
+input:hover, textarea:hover {
+    border-color: rgb(148, 149, 143);
+    background-color: #e8e7e7;
+}
+
