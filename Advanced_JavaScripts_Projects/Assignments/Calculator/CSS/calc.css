@@ -1,0 +1,89 @@
+/* Styling for the entire calc.html file */
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+/* Element Styling to remove default spacing and control the element sizing */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Calculator Container Styling */
+.calculator {
+    border: 1.2px solid mediumblue;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+/* Calculator Screen Styling */
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80ps;
+    border: none;
+    background-color: midnightblue;
+    color: lightblue;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px, 7px, 0px, 0px;
+}
+
+/* Calculator Button Stying */
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkslategray;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 128, 0.6));
+    text-shadow: 0 1px rgba(255, 255, 255, .05);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05),
+    inset 0 1px 0 0 rgba(255, 255, 255, .05),
+    inset 0 -1px 0 0 rgba(255, 255, 255, .05),
+    0 1px 0 0 rgba(255, 255, 255, .05);
+}
+
+/* Button Hover Style */
+button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.operator {
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.5));
+    background-color: steelblue;
+}
+
+.all-clear {
+    background-color: red;
+    border-color: darkslategray;
+    color: #ffffff;
+}
+
+.equal-sign {
+    background-color: forestgreen;
+    border-color: darkslategray;
+    color: #fff;
+    height: 100%;
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    background-color: darkblue;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
