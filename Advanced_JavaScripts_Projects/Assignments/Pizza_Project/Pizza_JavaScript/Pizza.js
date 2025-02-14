@@ -26,6 +26,7 @@ function getReceipt() {
         sizeTotal = 20;
     }
 
+    // // This logs information to the console for debugging
     runningTotal = sizeTotal;
     console.log(selectedSize + " = $" + sizeTotal + ".00");
     console.log("size: " + text1);
@@ -34,6 +35,7 @@ function getReceipt() {
     getTopping(runningTotal, text1);
 };
 
+// This function adds toppings to the receipt and calculates their cost
 function getTopping(runningTotal, text1) {
     let toppingTotal = 0;
     let selectedTopping = [];
@@ -54,6 +56,7 @@ function getTopping(runningTotal, text1) {
         toppingTotal = 0;
     }
 
+    // This logs information to the console for debugging
     runningTotal += toppingTotal;
     console.log("total selected topping items: " + toppingCount);
     console.log(toppingCount + " topping - 1 free topping = $" + toppingTotal + ".00");
