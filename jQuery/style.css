@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
+/* This sets up a font variable to use in the page */
 :root {
     --main-font: 'Gloock', serif;
 }
 
+/* This makes sure all of the elements are calculating the size correctly */
 * {
     box-sizing: border-box;
 }
 
+/* This styles the headers */
 h1,
 h2 {
     font-family: var(--main-font);
     text-align: center;
 }
 
+/* This sets the font size for the h2 headers */
 h2 {
     font-size: 40px;
 }
 
+/* This sets the font size for the h3 headers */
 h3 {
     font-family: var(--main-font);
     font-size: 30px;
@@ -26,43 +31,46 @@ h3 {
 
 /*HEADER SECTION*/
 
+/* This makes the text have a shiny effect */
 .shine {
     background-image: linear-gradient(0.15turn,
             #000000 40%,
             #a8a8a8 50%,
             #000000 60%);
     background-clip: text;
-    /*vendor prefix - webkit for Safari, Chrome, and newer versions of Opera
-    and moz is for Firefox*/
+    /* These are necessary for the shine effect to work in different browsers */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
-/*add transition properties in video*/
+/* This makes the header start out large */
 .header {
     padding-top: 150px;
     font-size: 150px;
-    transition: .5s ease;
+    transition: .5s ease; /* This makes the transition smooth */
 }
 
-/*Add header-scrolled class in video*/
+/* This makes the header smaller when the user scrolls down */
 .header-scrolled {
     font-size: 100px;
-    transition: .5s ease;
+    transition: .5s ease; /* This makes the transition smooth */
 }
 
 .car-title {
     font-size: 30px;
-    display: none;
+    display: none; /* This hides the car names until the 
+    JavaScript makes them show */
 }
 
+/* This centers everthing inside with 'container' classes */
 .container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
+/* This keeps the images in a row */
 .row {
     width: 90%;
     display: flex;
@@ -71,19 +79,25 @@ h3 {
     margin-left: auto;
 }
 
+/* This makes sure each column takes up only a third of the space */
 .column {
     width: 33%;
     margin: 40px;
 }
 
+/* This styles the car images */
 img {
-    width: 100%;
+    width: 100%; /* This makes sure the images fit inside of the column right */
     height: auto;
     cursor: pointer;
+    /* This adds a shadow effect for a 3d look */
     box-shadow: 20px 20px 20px -9px rgba(60, 60, 60, 0.35),
         10px 10px 10px -9px rgba(0, 0, 0, 0.5);
 }
 
+/* FAQ Section */
+
+/* This is the syling for the FAQ box */
 .faq {
     width: 80%;
     padding: 50px 100px 100px;
@@ -91,13 +105,17 @@ img {
     margin-bottom: 250px;
 }
 
+/* This is the styling for the FAQ questions */
 .question {
     padding: 5px 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black; /* Creates a line between
+    each question */
     cursor: pointer;
 }
 
+/* This is the styiling for the FAQ answers */
 .answer {
-    display: none;
+    display: none; /* Hides FAQ answuer until user clicks the
+    FAQ question */
     padding: 40px 20px;
 }
