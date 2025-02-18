@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JSX Assignment</title>
+    <meta charset="UTF-8" />
+    <!-- Linked to React Libraries -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin></script>
+
+    <!-- Linked to JSX Libraries -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Created <div> tag with an id attribute set to 'greeting' -->
+    <div id="greeting"></div>
+
+    <!-- This is telling the browser that the script is in JSX, so use Bable because it 
+     needs to be translated into vanilla JS so that the browser can understand it. -->
+    <script type="text/babel">
+      //   Used to specify a class or function
+      class Greeting extends React.Component {
+        // This is used to creat a function in React
+        render() {
+          // This returns the string found in the h1 heading below
+          return (
+            <h1>
+              Greetings JSX! We are going to be seeing a lot of each other!
+            </h1>
+          );
+        }
+      }
+      //   This is telling React to take this Greeting component and slap it into the
+      // the HTML element with the ID 'greeting'
+      ReactDOM.render(<Greeting />, document.getElementById("greeting"));
+    </script>
+  </body>
+</html>
