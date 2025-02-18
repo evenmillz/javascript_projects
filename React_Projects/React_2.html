@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React Assignment 2</title>
+    <meta charset="UTF-8" />
+    <!-- Linked the file to React Libraries -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin=""></script>
+  </head>
+  <body>
+    <!-- This is the dive the for the like button and the string it turns into once clicked -->
+    <div id="like_button_container"></div>
+    <script>
+      // This initializes 'X' as Reacts createElement function
+      const X = React.createElement;
+
+      // This is defining a React component called 'likeButton'
+      // The 'class likeButton' extends React.Component, meaning, it
+      // inherits or gets all of the built-in powers of a React component passed
+      // into it.
+      class likeButton extends React.Component {
+        // This constructor right here is the setup function, and it is
+        // what recieves props, being called as soon as it is created.
+        constructor(props) {
+          // The super(props) calls the parent constructor (React.Component) and asks
+          // for the feautures it has built into it
+          super(props);
+
+          // This is the memory for the component
+          this.state = {liked: false};
+        }
+
+        // This is telling the browser what to show on the screen
+        render() {
+          // This is checking if the likeButton has been clicked yet
+          if (this.state.liked) {
+            // If the button got clicked, this message displays and that's it
+            // the process stops right there.
+            return "You clicked the like button!";
+          }
+
+          // If the user didn't click the button yet, this displays a 'Like' button
+          // on the screen
+          return X(
+            "button",
+
+            // ANd this is saying that when the user clicks it, mark it as 'liked'
+            {onClick: () => this.setState({liked: true})},
+
+            // This is saying the button is going to say 'Like' on it
+            "Like"
+          );
+        }
+      }
+
+      // This is looking for the div ('#like_button_container') in the HTML to drop React code into it
+      const domContainer = document.querySelector("#like_button_container");
+
+      // This is taking the react component ('likeButton') and plugging it into the page at domContainer
+      ReactDOM.render(X(likeButton), domContainer);
+    </script>
+  </body>
+</html>

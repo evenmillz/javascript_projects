@@ -14,23 +14,38 @@
     <div id="My_React_Code"></div>
 
     <script>
+      // Created a React component class named "Counter"
       var Counter = React.createClass({
         render: function () {
+          // This calculates how much time has passed in hundredths of a second form
           var time_Passed = Math.round(this.props.time_Passed / 100);
+
+          // This converts the time into seconds, locking it in at one decimal place only
           var seconds_Passed =
             time_Passed / 10 + (time_Passed % 10 ? "" : ".0");
+
+          // This is what creates the text that will be displayed inside of the paragraph in the div
           var text =
             "My React code started running " + seconds_Passed + " seconds ago!";
+
+          // This returns a <p> element with the text inside of it
           return React.DOM.p(null, text);
         },
       });
 
+      // This is a factory function and it is for the Counter component
       var counter_Factory = React.createFactory(Counter);
 
+      // This makes note of the exact time when the script starts running
       var start_Counting = new Date().getTime();
+
+      // This sets an interval that updates the component every 50 miliseconds
       setInterval(function () {
         ReactDOM.render(
+          // This line caculates the time that has gone by and hands it off as a property to the Counter component
           counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+
+          // This tells react where to put the component in the HTML document
           document.getElementById("My_React_Code")
         );
       }, 50);
