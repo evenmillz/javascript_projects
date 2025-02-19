@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JSON.PARSE() ASSIGNMENT</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p id="mud"></p>
+
+    <script>
+      // This is a JSON string variable
+      let coffee =
+        '{"roast":"Light Roast ", "source": " Columbian ", "taste": " Citrus ", "body": " Quality "}';
+      // Convert JSON strings to JavaScript objects
+      let JSONstring = JSON.parse(coffee);
+      document.getElementById("mud").innerHTML =
+        JSONstring.body +
+        JSONstring.roast +
+        JSONstring.source +
+        JSONstring.taste +
+        " coffee is my jam!";
+    </script>
+  </body>
+</html>

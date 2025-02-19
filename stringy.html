@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JSON.STRINGIFY() ASSIGNMENT</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p id="stringy"></p>
+
+    <script>
+      // Utilizing the string method
+      let food = {
+        group: "fruit",
+        type: "apple",
+        strain: "Black Gilliflower",
+        size: "large-medium",
+      };
+
+      let yumYum = JSON.stringify(food);
+      document.getElementById("stringy").innerHTML = yumYum;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LOCALSTORAGE() METHOD ASSIGNMENT</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p id="cirriculum"></p>
+    <script>
+      // set the data as a key/value pair  to be saved locally in your browser
+      localStorage.setItem("course", "JavaScript");
+      // Then use the key "Course" to return its value "JavaScript"
+      document.getElementById("cirriculum").innerHTML =
+        localStorage.getItem("course");
+    </script>
+  </body>
+</html>
